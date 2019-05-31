@@ -1,0 +1,56 @@
+﻿.ml-30 {
+    margin-left: 45px;
+    margin-bottom: 20px;
+}
+.download_btn:hover {
+    color: #fff !important;
+    background: #1abc9c;
+    text-decoration: none;
+}
+.download_btn {
+    border: 1px solid #1abc9c;
+    color:#1abc9c;
+    border-radius: 28px;
+    width: 55px;
+    text-decoration: none;
+    padding-top: 1px;
+    height: 22px;
+}
+.down-span {
+}
+.ads-title {
+    margin-left: 2%;
+}
+.padding40-20 {
+    padding: 15px 20px 0px 20px;
+}
+.error-hr {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+.error-margin {
+}
+.appicon {
+    height: auto !important;
+    width: 70px !important;
+    border-radius: 15px !important;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+        .ml-30 {
+            margin-left: 15px;
+        }
+        .padding40-20 {
+            padding: 20px 20px;
+        }
+        .ads-title {
+        }
+}
+.app-name {
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+    margin-bottom: 10px !important;
+}

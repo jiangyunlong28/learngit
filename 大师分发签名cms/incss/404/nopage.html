@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+    <title>哎呦，遇到错误了</title>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicon -->
+     
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="inccss/404/css/bootstrap.min.css">
+    <link rel="stylesheet" href="inccss/404/css/style.css">
+
+ 
+
+    <!-- CSS Page Style -->    
+    <link rel="stylesheet" href="inccss/404/css/page_404_error4.css">
+
+ 
+
+    
+    <link rel="stylesheet" href="inccss/404/css/page_error_ad.css">
+
+</head> 
+
+<body>
+ 
+
+    <!--=== Error v4 ===-->    
+    <div class="container error-v4">
+        <div class="row">
+            <div class="col-lg-12  col-xs-12 col-md-12 col-sm-12 text-center">
+                    <p class=" animated fadeInDown"><img class="img-responsive center-block"  src="inccss/404/picture/404_pic.png"/></p>
+                    
+                    <p class="regret">APP已经删除或下载地址不存在！！！</p>
+                    <a class="btnp create_btn center-block col-sm-8 col-xs-12 col-md-4 col-lg-4" style="float:none;" role="button"  href="/index.html">返回分发平台首页</a>
+            </div>
+        </div>
+    </div>
+    <!--End Error Block-->
+
+    <!--Error Ads -->
+    <div id="error-ads" class='container'>
+	 
+    </div>
+    <!--End Error Ads-->
+
+    <!--=== Sticky Footer ===-->
+    <div class="container sticky-footer">
+        <p class="copyright-space">
+           2015~2030 &copy; 91大师分发应用 imy1.com All Rights Reserved. 
+        </p>
+    </div>
+    <!--=== End Sticky Footer ===-->
+
+
+<!-- JS Global Compulsory -->           
+<script type="text/javascript" src="inccss/404/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="inccss/404/js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="inccss/404/js/bootstrap.min.js"></script> 
+<!-- JS Page Level -->           
+<script type="text/javascript" src="inccss/404/js/app.js"></script>
+<script type="text/javascript" src="inccss/404/js/loaderrorads.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+
+    });
+</script>
+<!--[if lt IE 9]>
+    <script src="inccss/404/js/respond.js"></script>
+<![endif]-->
+<style type="text/css">
+    .xuanfu{  
+    left: 0;  
+    position: fixed;  
+    bottom: 0;//这里换成top:0;就悬浮在头部  
+    width: 100%;  
+    z-index: 100;  
+} 
+
+</style>
+
+<!--=== Copyright ===-->
+	<!--广告代码
+<div class="xuanfu"><a onclick="xuanfuclose()"> 关闭 </a> 
+      <a href="#">
+        <img style="width: 100%;height: 80px" src="#"></a> 
+</div>
+		-->
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8  col-xs-12 col-md-6 col-sm-6 text-left">
+				<a href="/index.html">91大师分发分发</a>                    ｜
+                                <a href="#" target="_blank">免责声明</a>                    ｜
+                                <a href="http://jingyan.baidu.com/article/9c69d48f98e11813c8024e77.html" target="_blank">苹果信任证书操作</a>
+				&nbsp;&nbsp;&nbsp;<a data-toggle="modal" id="reportClick" class="btn btn-danger btn-xs" style="color:#fff !important; background:#56bc94 !important; border:0px !important; margin-top:-3px">举报该应用</a>
+            </div>
+			<div class="col-lg-4  col-xs-12 col-md-6 col-sm-6 text-right">
+                页面由 <a href="/index.html">91大师分发分发</a> 提供
+            </div>
+        </div><!--/row-fluid-->
+    </div><!--/container-->
+</div>
+
+    <style>
+        .floadAd { position: absolute;z-index: 999900; display: none; }
+        .floadAd .item { display: block; }
+        .floadAd .item img { vertical-align: bottom; }/* a img 的组合浏览器默认下边会有几个像素的空白，这里可以消除空白*/
+    </style>
+    <div id="floadAD" class="floadAd">
+	<!--广告代码
+    <a class="close" href="javascript:void(0);" style="color: red;font-size: 14px">×关闭[VIP用户去广告]</a>
+    <a class="item" title='游戏中心' href="#" target="_blank">
+        <img style="width: 120px" src="#" />
+        </a>
+		-->
+    </div>
+    <script>
+      function xuanfuclose(){
+            $('.xuanfu').hide();
+
+        }
+    FloatAd("#floadAD");//调用
+    //广告漂浮窗口
+    function FloatAd(selector) {
+        var obj = $(selector);
+        if (obj.find(".item").length == 0) return;
+        var windowHeight = $(window).height();
+        var windowWidth = $(window).width();
+        var dirX = -1.5;
+        var dirY = -1;
+        var delay = 30;
+        obj.css({ left: windowWidth / 2 - obj.width() / 2 + "px", top: windowHeight / 2 - obj.height() / 2 + "px" });
+        obj.show();
+        var handler = setInterval(move, delay);
+
+        obj.hover(function() {
+            clearInterval(handler);
+        }, function() {
+            handler = setInterval(move, delay);
+        });
+
+        obj.find(".close").click(function() {
+            close();
+        });
+        $(window).resize(function() {
+            windowHeight = $(window).height();
+            windowWidth = $(window).width();
+        });
+        function move() {
+            var currentPos = obj.position();
+            var nextPosX = currentPos.left + dirX;
+            var nextPosY = currentPos.top + dirY;
+
+            if (nextPosX >= windowWidth - obj.width()) {
+                //close();
+            }
+
+            if (nextPosX <= 0 || nextPosX >= windowWidth - obj.width()) {
+                dirX = dirX * -1;//改变方向
+                nextPosX = currentPos.left + dirX;//为了不过界，重新获取下一个位置
+            }
+            if (nextPosY <= 0 || nextPosY >= windowHeight - obj.height() - 5) {
+                dirY = dirY * -1;//改变方向
+                nextPosY = currentPos.top + dirY;//为了不过界，重新获取下一个位置
+            }
+            obj.css({ left: nextPosX + "px", top: nextPosY + "px" });//移动到下一个位置
+        }
+
+        function close() {
+            clearInterval(handler);
+            obj.remove();
+        }
+    }
+</script>
+<span style="display:none">
+</span>
+</body>
+</html>
