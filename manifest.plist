@@ -11,7 +11,7 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string>https://192.168.0.115:8443/filedownload/yth.ipa</string>
+					<string>https://raw.githubusercontent.com/jiangyunlong28/learngit/master/AppDistribution/distribution/web/yth_ipa/yth.ipa</string>
 				</dict>
 				<dict>
 					<key>kind</key>
